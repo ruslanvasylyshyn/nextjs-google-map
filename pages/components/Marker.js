@@ -1,6 +1,6 @@
 import { Marker } from '@react-google-maps/api'
 
-export default function MarkerComponent({blueMarkers, redMarker }){
+function MarkerComponent({blueMarkers, redMarker }){
     return(
       <>
         {blueMarkers.map((location)=> {
@@ -23,3 +23,5 @@ export default function MarkerComponent({blueMarkers, redMarker }){
       </>
     )
   }
+
+export default MarkerComponent;
