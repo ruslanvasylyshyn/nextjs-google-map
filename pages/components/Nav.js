@@ -1,7 +1,7 @@
 import React from "react";
 import { locations } from '../api/api'
 
-export function Nav({ markersFilter }) {
+export default function Nav({ markersFilter }) {
     return(
         <nav>
             <ul>
