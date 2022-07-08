@@ -3,7 +3,7 @@ import { GoogleMap, useLoadScript } from '@react-google-maps/api'
 import { locations } from './api/api'
 import { useState } from 'react'
 import Nav from './components/Nav'
-import MarkerComponent from './components/Marker'
+import MarkerComponent from './components/MarkerComponent'
 
 export default function Home() {
   const { isLoaded } = useLoadScript({googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,})
@@ -55,5 +55,3 @@ export default function Home() {
     </div>
   )
 }
-
-

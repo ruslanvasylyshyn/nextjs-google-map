@@ -1,9 +1,10 @@
 import { Marker } from '@react-google-maps/api'
 
-function MarkerComponent({blueMarkers, redMarker }){
+function MarkerComponent({ blueMarkers, redMarker }){
+
     return(
       <>
-        {blueMarkers.map((location)=> {
+        {blueMarkers?.map((location)=> {
           return(
             <Marker 
               key={location.key} 
@@ -12,7 +13,7 @@ function MarkerComponent({blueMarkers, redMarker }){
             />
           )
         })}
-        {redMarker.map((location)=> {
+        {redMarker?.map((location)=> {
           return(
             <Marker 
               key={location.key} 
